@@ -359,17 +359,6 @@ mjx-container[display="true"] + br {
           
           
           <li>
-            <a href="/blog/archive/">
-              
-              归档
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/blog/categories/">
               
               分类
@@ -384,6 +373,17 @@ mjx-container[display="true"] + br {
             <a href="/blog/tags/">
               
               标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/blog/archive/">
+              
+              归档
               
               
             </a>
@@ -574,40 +574,31 @@ mjx-container[display="true"] + br {
         <blockquote>
 <p>本文是开源软件开发与社区治理课程的第一次作业，旨在详细介绍了Hexo 静态博客的搭建方法</p>
 </blockquote>
-<h2 id="摘要">摘要</h2>
-<p>Hexo 是一个基于 Node.js 的静态博客生成工具，它以简洁、高效著称，支持 Markdown 及其他渲染引擎，允许用户轻松创建和管理个人博客。本报告将概述使用 Hexo 搭建静态博客的基本步骤，包括安装、配置、文章编写、预览及部署等。</p>
-<h2 id="环境准备">环境准备</h2>
-<p>在开始搭建 Hexo 博客之前，确保已安装 Node.js。可以从 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js 官网</a> 获取安装包。</p>
-<h2 id="安装-Hexo">安装 Hexo</h2>
-<p>通过 npm 全局安装 Hexo CLI 工具：</p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><p>Hexo 是一个基于 Node.js 的静态博客生成工具，它以简洁、高效著称，支持 Markdown 及其他渲染引擎，允许用户轻松创建和管理个人博客。本报告将概述使用 Hexo 搭建静态博客的基本步骤，包括安装、配置、文章编写、预览及部署等。</p>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p>在开始搭建 Hexo 博客之前，确保已安装 Node.js。可以从 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js 官网</a> 获取安装包。</p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>通过 npm 全局安装 Hexo CLI 工具：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h2 id="创建博客项目">创建博客项目</h2>
-<p>初始化一个新的 Hexo 博客项目，并安装依赖：</p>
+
+<h2 id="创建博客项目"><a href="#创建博客项目" class="headerlink" title="创建博客项目"></a>创建博客项目</h2><p>初始化一个新的 Hexo 博客项目，并安装依赖：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h2 id="生成静态内容">生成静态内容</h2>
-<p>使用以下命令生成静态网页文件：</p>
+
+<h2 id="生成静态内容"><a href="#生成静态内容" class="headerlink" title="生成静态内容"></a>生成静态内容</h2><p>使用以下命令生成静态网页文件：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
-<h2 id="启动本地预览">启动本地预览</h2>
-<p>启动本地服务器以预览博客：</p>
+
+<h2 id="启动本地预览"><a href="#启动本地预览" class="headerlink" title="启动本地预览"></a>启动本地预览</h2><p>启动本地服务器以预览博客：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo serve</span><br></pre></td></tr></table></figure>
 <p>访问 <code>http://localhost:4000/</code> 查看博客。</p>
-<h2 id="文章编写">文章编写</h2>
-<p>在 <code>_posts</code> 目录下创建 <code>.md</code> 文件，使用 Markdown 语法编写文章。</p>
-<h2 id="部署博客">部署博客</h2>
-<p>将生成的静态文件部署到静态文件托管服务，如 GitHub Pages、Netlify 或自托管服务器。</p>
-<h2 id="配置与定制">配置与定制</h2>
-<p>通过编辑 <code>_config.yml</code> 文件，可以对博客进行基本配置。Hexo 社区提供了丰富的插件和主题，以满足不同用户的定制需求。</p>
-<h2 id="常用命令汇总">常用命令汇总</h2>
-<ul>
+<h2 id="文章编写"><a href="#文章编写" class="headerlink" title="文章编写"></a>文章编写</h2><p>在 <code>_posts</code> 目录下创建 <code>.md</code> 文件，使用 Markdown 语法编写文章。</p>
+<h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><p>将生成的静态文件部署到静态文件托管服务，如 GitHub Pages、Netlify 或自托管服务器。</p>
+<h2 id="配置与定制"><a href="#配置与定制" class="headerlink" title="配置与定制"></a>配置与定制</h2><p>通过编辑 <code>_config.yml</code> 文件，可以对博客进行基本配置。Hexo 社区提供了丰富的插件和主题，以满足不同用户的定制需求。</p>
+<h2 id="常用命令汇总"><a href="#常用命令汇总" class="headerlink" title="常用命令汇总"></a>常用命令汇总</h2><ul>
 <li><code>hexo new [layout] &lt;title&gt;</code>：创建新文章。</li>
 <li><code>hexo generate</code>：生成静态文件。</li>
 <li><code>hexo clean</code>：清除生成的静态文件。</li>
 <li><code>hexo deploy</code>：部署博客到远程服务器。</li>
 </ul>
-<h2 id="进一步学习">进一步学习</h2>
-<p>Hexo 官方文档提供了详尽的指南和高级用法，推荐访问 <a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo 官网</a> 深入学习。</p>
-<h2 id="结语">结语</h2>
-<p>Hexo 以其灵活性和易用性，成为搭建个人博客的优选工具。本报告旨在为初学者提供一个快速上手的指南，随着对 Hexo 的深入了解，用户可以探索更多高级功能，以打造个性化的博客平台。</p>
+<h2 id="进一步学习"><a href="#进一步学习" class="headerlink" title="进一步学习"></a>进一步学习</h2><p>Hexo 官方文档提供了详尽的指南和高级用法，推荐访问 <a target="_blank" rel="noopener" href="https://hexo.io/docs/">Hexo 官网</a> 深入学习。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>Hexo 以其灵活性和易用性，成为搭建个人博客的优选工具。本报告旨在为初学者提供一个快速上手的指南，随着对 Hexo 的深入了解，用户可以探索更多高级功能，以打造个性化的博客平台。</p>
 
 
         <hr>

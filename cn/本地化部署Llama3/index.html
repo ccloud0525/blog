@@ -247,17 +247,6 @@
           
           
           <li>
-            <a href="/blog/archive/">
-              
-              归档
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/blog/categories/">
               
               分类
@@ -272,6 +261,17 @@
             <a href="/blog/tags/">
               
               标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/blog/archive/">
+              
+              归档
               
               
             </a>
@@ -397,7 +397,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">487</span> In Total
+              Words <span class="post-count">486</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -462,19 +462,14 @@
         <blockquote>
 <p>本文通过在私有服务器上部署开源大模型Llama3，并且通过langchain实现agent的开发，使用streamlit实现web应用的开发，实现了私有的大模型使用、微调等功能</p>
 </blockquote>
-<h2 id="Llama3版本选择">Llama3版本选择</h2>
-<p>总共有8B，70B的两种分为instruct微调和非instruct得版本，其中70B instruct版本应该是对话方面最好的，相当于是70B参数的版本经过对话场景的指令微调。</p>
-<h2 id="部署（微调）">部署（微调）</h2>
-<ul>
-<li>原生torch部署–使用Llama官方仓库](<a target="_blank" rel="noopener" href="https://github.com/meta-llama/llama3">https://github.com/meta-llama/llama3</a>)下提供的方式，用download脚本从meta官网下载70B大模型的参数（8 * 16g），且必须8卡部署？好处是自由度更大，改动空间更大，但是需要较强的NLP专业知识，对于模型进行调整，而且tokenizer部分似乎也需要自己去实现，来实现在额外数据上的微调。</li>
+<h2 id="Llama3版本选择"><a href="#Llama3版本选择" class="headerlink" title="Llama3版本选择"></a>Llama3版本选择</h2><p>总共有8B，70B的两种分为instruct微调和非instruct得版本，其中70B instruct版本应该是对话方面最好的，相当于是70B参数的版本经过对话场景的指令微调。</p>
+<h2 id="部署（微调）"><a href="#部署（微调）" class="headerlink" title="部署（微调）"></a>部署（微调）</h2><ul>
+<li>原生torch部署–使用Llama官方仓库](<a target="_blank" rel="noopener" href="https://github.com/meta-llama/llama3)%E4%B8%8B%E6%8F%90%E4%BE%9B%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%8C%E7%94%A8download%E8%84%9A%E6%9C%AC%E4%BB%8Emeta%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD70B%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%8F%82%E6%95%B0%EF%BC%888">https://github.com/meta-llama/llama3)下提供的方式，用download脚本从meta官网下载70B大模型的参数（8</a> * 16g），且必须8卡部署？好处是自由度更大，改动空间更大，但是需要较强的NLP专业知识，对于模型进行调整，而且tokenizer部分似乎也需要自己去实现，来实现在额外数据上的微调。</li>
 <li>使用huggingface的transformers库进行部署，但是该过程似乎要载入一个和meta官网版本不同的参数？使用huggingface transformers封装过得模型，通过统一一些接口，实现了微调、推理的统一化操作，但是似乎<strong>丧失了对于模型架构侵入式修改的能力</strong>，只能使用外部支路微调的方式。好处是流程统一化，不需要太多专业知识就可以进行微调任务。总结，huggingface帮助将调试大模型的流程简化了很多，还是应该用huggingface进行部署。</li>
 </ul>
-<h2 id="应用开发">应用开发</h2>
-<p>使用Langchain开发交互应用，即agent</p>
-<h2 id="交互开发">交互开发</h2>
-<p>使用streamlit进行交互界面的快速构建</p>
-<h2 id="总结">总结</h2>
-<p>其实是开发agent的一个简单流程，核心（大脑）使用开源的LLM，huggingface的transformers，accelerate，和peft库可以方便LLM的推理、微调过程；工具链（四肢）使用langchain开发相关应用；交互界面采用基于python构建的轻量级后端框架streamlit</p>
+<h2 id="应用开发"><a href="#应用开发" class="headerlink" title="应用开发"></a>应用开发</h2><p>使用Langchain开发交互应用，即agent</p>
+<h2 id="交互开发"><a href="#交互开发" class="headerlink" title="交互开发"></a>交互开发</h2><p>使用streamlit进行交互界面的快速构建</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实是开发agent的一个简单流程，核心（大脑）使用开源的LLM，huggingface的transformers，accelerate，和peft库可以方便LLM的推理、微调过程；工具链（四肢）使用langchain开发相关应用；交互界面采用基于python构建的轻量级后端框架streamlit</p>
 
 
         <hr>

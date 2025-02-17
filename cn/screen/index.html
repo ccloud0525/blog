@@ -359,17 +359,6 @@ mjx-container[display="true"] + br {
           
           
           <li>
-            <a href="/blog/archive/">
-              
-              归档
-              
-              
-            </a>
-          </li>
-          
-          
-          
-          <li>
             <a href="/blog/categories/">
               
               分类
@@ -384,6 +373,17 @@ mjx-container[display="true"] + br {
             <a href="/blog/tags/">
               
               标签
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/blog/archive/">
+              
+              归档
               
               
             </a>
@@ -574,8 +574,8 @@ mjx-container[display="true"] + br {
         <blockquote>
 <p>The blog introduces the instruction screen</p>
 </blockquote>
-<h2 id="命令参数">命令参数</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen [-AmRvx -<span class="built_in">ls</span> -wipe][-d &lt;作业名称&gt;][-h &lt;行数&gt;][-r &lt;作业名称&gt;][-s &lt;shell&gt;][-S &lt;作业名称&gt;]</span></span><br></pre></td></tr></table></figure>
+<h2 id="命令参数"><a href="#命令参数" class="headerlink" title="命令参数"></a>命令参数</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen [-AmRvx -<span class="built_in">ls</span> -wipe][-d &lt;作业名称&gt;][-h &lt;行数&gt;][-r &lt;作业名称&gt;][-s &lt;shell&gt;][-S &lt;作业名称&gt;]</span></span><br></pre></td></tr></table></figure>
+
 <ul>
 <li>-A 　将所有的视窗都调整为目前终端机的大小。</li>
 <li>-d &lt;作业名称&gt; 　将指定的screen作业离线。</li>
@@ -590,21 +590,27 @@ mjx-container[display="true"] + br {
 <li>-ls或–list 　显示目前所有的screen作业。</li>
 <li>-wipe 　检查目前所有的screen作业，并删除已经无法使用的screen作业。</li>
 </ul>
-<h2 id="实例">实例</h2>
-<p>创建screen终端</p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><p>创建screen终端</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen -S &lt;终端名&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>创建终端并执行任务</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen vi ~/main.c //创建终端，并执行vi命令</span></span><br></pre></td></tr></table></figure>
+
 <p>离开screen终端</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen vi ~/main.c //创建 screen 终端 ，并执行 vi命令</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">include</span> </span><br><span class="line"></span><br><span class="line">main ()</span><br><span class="line">{</span><br><span class="line"></span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">"~/mail.c"       0,0-1    </span><br><span class="line"></span><br><span class="line">在 screen 终端 下 按下 Ctrl+a d键</span><br></pre></td></tr></table></figure>
+
 <p>重新连接离开的screen终端</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen -<span class="built_in">ls</span>  //显示已创建的screen终端</span> </span><br><span class="line">There are screens on:</span><br><span class="line">2433.pts-3.linux    (2013年10月20日 16时48分59秒)    (Detached)</span><br><span class="line">2428.pts-3.linux    (2013年10月20日 16时48分05秒)    (Detached)</span><br><span class="line">2284.pts-3.linux    (2013年10月20日 16时14分55秒)    (Detached)</span><br><span class="line">2276.pts-3.linux    (2013年10月20日 16时13分18秒)    (Detached)</span><br><span class="line">4 Sockets in /var/run/screen/S-root.</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen -r 2276 //连接 screen_id 为 2276 的 screen终端</span></span><br></pre></td></tr></table></figure>
+
 <p>关闭当前screen终端</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">exit</span></span></span><br><span class="line">或者ctrl + d</span><br></pre></td></tr></table></figure>
+
 <p>跳出当前screen终端（不关闭）</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen -d 26542</span></span><br><span class="line">或者 按住ctrl + a 然后再按 d</span><br></pre></td></tr></table></figure>
+
 <p>删除指定的终端</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">screen -S your_screen_name -X quit</span></span><br></pre></td></tr></table></figure>
+
 
 
         <hr>
