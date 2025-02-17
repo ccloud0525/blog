@@ -408,7 +408,7 @@
             </span>
             <div class="blank_box"></div>
             <span class="meta">
-              Words <span class="post-count">644</span> In Total
+              Words <span class="post-count">645</span> In Total
             </span>
             <div class="blank_box"></div>
             <!-- WordCount end -->
@@ -473,10 +473,14 @@
         <blockquote>
 <p>网上关于pycharm远程连接的教程大多错误或过时，本文从原理角度分析讲解如何使用pycharm在服务器部署远程调试任务</p>
 </blockquote>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>下载pycharm专业版，远程服务器调试完成，开放ssh端口</p>
-<h2 id="Pycharm部署远程任务"><a href="#Pycharm部署远程任务" class="headerlink" title="Pycharm部署远程任务"></a>Pycharm部署远程任务</h2><h3 id="配置SSH实例"><a href="#配置SSH实例" class="headerlink" title="配置SSH实例"></a>配置SSH实例</h3><p>File–&gt;settings–&gt;ssh configurations–&gt;添加新的ssh连接</p>
+<h2 id="准备工作">准备工作</h2>
+<p>下载pycharm专业版，远程服务器调试完成，开放ssh端口</p>
+<h2 id="Pycharm部署远程任务">Pycharm部署远程任务</h2>
+<h3 id="配置SSH实例">配置SSH实例</h3>
+<p>File–&gt;settings–&gt;ssh configurations–&gt;添加新的ssh连接</p>
 <p><img src="ssh.png" alt="ssh"></p>
-<h3 id="配置SFTP连接服务器，构建本地到服务器映射"><a href="#配置SFTP连接服务器，构建本地到服务器映射" class="headerlink" title="配置SFTP连接服务器，构建本地到服务器映射"></a>配置SFTP连接服务器，构建本地到服务器映射</h3><p>可以直接在add new interpreter中选择ssh interpreter，选用直接配置的ssh实例作为连接，解释器则选择服务器上对应环境的</p>
+<h3 id="配置SFTP连接服务器，构建本地到服务器映射">配置SFTP连接服务器，构建本地到服务器映射</h3>
+<p>可以直接在add new interpreter中选择ssh interpreter，选用直接配置的ssh实例作为连接，解释器则选择服务器上对应环境的</p>
 <p><img src="int.png" alt="int"></p>
 <p>interpreter配置过程中就可以选择文件映射规则</p>
 <p><img src="rule.png" alt="rule"></p>
@@ -485,12 +489,13 @@
 <p>选择之前的ssh实例作为连接方式</p>
 <p>root path代表的是连接服务器之后，默认达到的目录，此处设置为服务器上项目代码的目录（可以先用scp把项目传上服务器）</p>
 <p><img src="sftp.png" alt="sftp"></p>
-<p>在Mappings(映射)处选择本地项目位置（local path）和服务器端项目位置（Development path）的映射，即后续上传下载代码都是会互相覆盖，此处Development path直接用’&#x2F;‘代表root path，即之前设置好的项目位置。</p>
+<p>在Mappings(映射)处选择本地项目位置（local path）和服务器端项目位置（Development path）的映射，即后续上传下载代码都是会互相覆盖，此处Development path直接用’/'代表root path，即之前设置好的项目位置。</p>
 <p>Add New Mapping 用于添加多重映射</p>
 <p><img src="map.png" alt="map"></p>
 <p>如果有不想映射的文件（比如数据集），需要在excluded paths中添加出来</p>
 <p><img src="exc.png" alt="exc"></p>
-<h2 id="项目调试"><a href="#项目调试" class="headerlink" title="项目调试"></a>项目调试</h2><p>把项目解释器调成ssh端的，如果要用pycharm的配置文件运行项目，不要忘记设置</p>
+<h2 id="项目调试">项目调试</h2>
+<p>把项目解释器调成ssh端的，如果要用pycharm的配置文件运行项目，不要忘记设置</p>
 <p><img src="config.png" alt="config"></p>
 <p>或者直接在File–&gt;settings–&gt;ssh terminal中将默认解释器调成远程的，这样新建的运行调试的配置文件就会默认选择该解释器</p>
 <p><img src="ter.png" alt="ter"></p>
@@ -693,10 +698,6 @@
           
           <li>
             <a href="https://picasun.github.io/" target="_blank">Picasun</a>
-          </li>
-          
-          <li>
-            <a href="https://hexo.io/" target="_blank">Hexo</a>
           </li>
           
         </ul>

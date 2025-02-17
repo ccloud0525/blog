@@ -602,9 +602,10 @@ mjx-container[display="true"] + br {
 本文详细介绍了dilated casual convolution和TCN的相关知识以及论文Graph WaveNet for Deep Spatial-Temporal Graph Modeling的研究内容和成果
 
 介绍
+
 时空图建模旨在通过预定义的图节点间的关联，学习出其内部联系
 考虑节点间的欧氏距离来预定义图的边的权重是不合理的
-时空图建模的一个基本假设是一个节点的未来信息受制于其历......
+时空图建模的一个基本假设是一个节点的未来信息受制于其......
     </div>
   </a>
   
@@ -641,12 +642,12 @@ mjx-container[display="true"] + br {
 本文详细介绍了扩散卷积的相关知识以及论文DCRNN的研究内容和成果
 
 介绍
+
 基本目标是构建一个速度传感器网络，通过给定的历史速度数据以及潜在的道路网络，预测交通情况（速度）
 挑战性主要在于时空关联性以及长程预测问题的内在复杂性
-交通序列的动态变化性——不断出现的特殊事件例如交通事故和上下班高峰导致了不稳定性，使长期预测变得不可靠
-道路网络上的交通传感器具备独特的空间关联性——非欧且有向
 
-......
+交通序列的动态变化性——不断出现的特殊事件例如交通事故和上下班高峰导致了不稳定性，使长期预测变得不可靠
+道路网络上的交通传感器具备独特的空间关联性——非欧且有向......
     </div>
   </a>
   
@@ -684,7 +685,8 @@ mjx-container[display="true"] + br {
       
 本文详细介绍了论文AGCRN的研究内容和成果
 
-介绍智能交通系统的发展仰仗着交通预测技术的发展，而交通预测的难点在于复杂的内部依赖关系（同一个交通序列的时间联系）和相互依赖关系（不同交通序列的空间联系）。传统方法例如自回归整体均值移动（ARIMA）和向量自回归（VAR）都只采用了时间序列建模，他们不能捕获非线性关系和大规模交通数据中错综复杂的时空关联。而基于深度学习的方法仅仅用循环神经网络......
+介绍
+智能交通系统的发展仰仗着交通预测技术的发展，而交通预测的难点在于复杂的内部依赖关系（同一个交通序列的时间联系）和相互依赖关系（不同交通序列的空间联系）。传统方法例如自回归整体均值移动（ARIMA）和向量自回归（VAR）都只采用了时间序列建模，他们不能捕获非线性关系和大规模交通数据中错综复杂的时空关联。而基于深度学习的方法仅仅用循环神经网......
     </div>
   </a>
   
@@ -723,13 +725,15 @@ mjx-container[display="true"] + br {
 本文详细介绍了论文AutoCTS: Automated Correlated Time Series Forecasting的研究内容和成果
 
 引言
+
+
 相关时序预测（CTS forecasting）在信息物理系统中非常重要
+
 
 基于深度学习的CTS预测方法已经能够通过时空模块（ST blocks）根据时间序列的时间依赖性和空间关联性建模
 
-ST-Blocks用于提炼原始数据的时间和空间特征
 
-......
+ST-Blocks用于提炼原始数据的时间和空间......
     </div>
   </a>
   
@@ -768,10 +772,11 @@ ST-Blocks用于提炼原始数据的时间和空间特征
 本文详细介绍了论文STGCN:Spacial Temporal Graph Convolutional Network
 
 引言
+
 实时而精准的交通预测对于交通管控非常重要。
 由于非线性性和复杂性，传统方法没法满足中长期的预测任务并且总是忽视时空依赖关系。
 STGCN(Spatio-Temporal Graph Convolutional Networks)被提出用来解决以上两个痛点。
-摒弃过......
+摒弃......
     </div>
   </a>
   
@@ -809,8 +814,9 @@ STGCN(Spatio-Temporal Graph Convolutional Networks)被提出用来解决以上�
       
 本文详细阐述了傅里叶变换的推导、实际意义以及深层含义
 
-傅里叶级数傅里叶级数的产生归功于数学家傅里叶对于周期函数的研究。已知三角函数系sinnx ，cosnx均为周期函数，则其任意线性组合也为周期函数。故而傅里叶认为任意可积周期函数均可分解成三角函数系的线性组合并率先研究了周期为2$\pi$的函数：
-$$f(x)&#x3D;\frac{a_0}{2}+\sum_{n&#x3D;1}^{∞}......
+傅里叶级数
+傅里叶级数的产生归功于数学家傅里叶对于周期函数的研究。已知三角函数系sinnx ，cosnx均为周期函数，则其任意线性组合也为周期函数。故而傅里叶认为任意可积周期函数均可分解成三角函数系的线性组合并率先研究了周期为2$\pi$的函数：
+$$f(x)=\frac{a_0}{2}+\sum_{n=1}^{∞}{(a_ncosn......
     </div>
   </a>
   
@@ -846,9 +852,10 @@ $$f(x)&#x3D;\frac{a_0}{2}+\sum_{n&#x3D;1}^{∞}......
       
 本文详细介绍了如何在Deepin下实现全自动化科学上网
 
-socks5Pac代理设置12345$ sudo apt install python3-pip$ sudo pip3 install genpac$ genpac --pac-compress --pac-proxy 'SOCKS5 127.0.0.1:1081' --format pac  -o ~/auto.pac
-
-12#系......
+socks5
+Pac代理设置
+12345$ sudo apt install python3-pip$ sudo pip3 install genpac$ genpac --pac-compress --pac-proxy 'SOCKS5 127.0.0.1:1081' --format pac  -o ~/auto.pac
+12#......
     </div>
   </a>
   
@@ -886,7 +893,8 @@ socks5Pac代理设置12345$ sudo apt install python3-pip$ sudo pip3 install genp
       
 本文详细叙述了前端基于微信小程序，后端基于Django框架的web项目部署过程。
 
-引言小程序开发已经衍化出了一套十分固定的流程，而腾讯也希望开发者们在未经上线（商用化）前，只在本地调试，为了安全性设置了必须拥有合法域名才能上线的硬性要求。而作为学生项目而言，想要免费体验在服务器上部署后端，用前端访问的完整流程，小程序显然并不是特别适合。为了不购买域名，将Nginx部署在本地进行“前向代理......
+引言
+小程序开发已经衍化出了一套十分固定的流程，而腾讯也希望开发者们在未经上线（商用化）前，只在本地调试，为了安全性设置了必须拥有合法域名才能上线的硬性要求。而作为学生项目而言，想要免费体验在服务器上部署后端，用前端访问的完整流程，小程序显然并不是特别适合。为了不购买域名，将Nginx部署在本地进行“前向代......
     </div>
   </a>
   
@@ -924,7 +932,8 @@ socks5Pac代理设置12345$ sudo apt install python3-pip$ sudo pip3 install genp
       
 本文详细介绍了如何直接拉取、配置适用于深度神经网络训练的环境
 
-docker环境配置12345678910111213141516171819202122232425262728293031323334353637383940414243#给docker安装nvidia-container-runtime，让container能使用宿主机的nvidia显卡教程网址：http://www.m......
+docker环境配置
+12345678910111213141516171819202122232425262728293031323334353637383940414243#给docker安装nvidia-container-runtime，让container能使用宿主机的nvidia显卡教程网址：http://www.......
     </div>
   </a>
   
@@ -962,8 +971,10 @@ docker环境配置12345678910111213141516171819202122232425262728293031323334353
       
 本文区分了三个比较容易混淆的分支
 
-远程分支远程分支指的是Github或者Gitlab这种基于git做版本管理的远程仓库中的项目的分支。
-远程跟踪分支《progit》中提出的概念，虽然叫远程跟踪，但实际在本地。当使用 git fetch命令时，git比较远程仓库和本地仓库的差异，并且将远程仓库的分支拉取下来，保存为形如origin&#x2F;master的本地只读分支（这就是远程跟踪分支）......
+远程分支
+远程分支指的是Github或者Gitlab这种基于git做版本管理的远程仓库中的项目的分支。
+远程跟踪分支
+《progit》中提出的概念，虽然叫远程跟踪，但实际在本地。当使用 git fetch命令时，git比较远程仓库和本地仓库的差异，并且将远程仓库的分支拉取下来，保存为形如origin/master的本地只读分支（这就是远程跟踪分支）。所谓......
     </div>
   </a>
   
@@ -1061,15 +1072,15 @@ docker环境配置12345678910111213141516171819202122232425262728293031323334353
     
     
     
-    <a href="/tags/#blog" title="blog" rel="1">blog</a>
-    
-    
-    
     <a href="/tags/#python" title="python" rel="2">python</a>
     
     
     
     <a href="/tags/#docker" title="docker" rel="4">docker</a>
+    
+    
+    
+    <a href="/tags/#blog" title="blog" rel="1">blog</a>
     
     
     
@@ -1223,8 +1234,6 @@ docker环境配置12345678910111213141516171819202122232425262728293031323334353
   
   <li><a href="https://picasun.github.io/" target="_blank">Picasun</a></li>
   
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
 </ul>
 
 
@@ -1258,16 +1267,16 @@ docker环境配置12345678910111213141516171819202122232425262728293031323334353
       <li>Linux系统配置</li>
     </a>
     
-    <a href="/categories/#blog">
-      <li>blog</li>
-    </a>
-    
     <a href="/categories/#编程">
       <li>编程</li>
     </a>
     
     <a href="/categories/#集群配置">
       <li>集群配置</li>
+    </a>
+    
+    <a href="/categories/#blog">
+      <li>blog</li>
     </a>
     
     <a href="/categories/#git">
